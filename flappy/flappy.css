@@ -1,7 +1,7 @@
 .gameBox{
 	overflow: hidden;
 	position: relative;
-	width: 700px;
+	width: 500px;
 	height: 300px;
 	border: 2px solid #000000;
 }
@@ -15,24 +15,21 @@
 }
 .block{
 	position: absolute;
-	height: 300px;
 	width: 20px;
-	top:0;
-	right: 0;
+	height: 120px;
+	background-color: #ff0000;
 }
-.block_1{
+#block_1{
 	position: absolute;
 	bottom:0;
 	right: 0;
-	width: 20px;
-	height: 120px;
-	background-color: #ff0000;
 }
-.block_2{
+#block_2{
 	position: absolute;
 	top:0;
 	right: 0;
-	width: 20px;
-	height: 120px;
-	background-color: #ff0000;
+}
+.btn_reset{
+	position: absolute;
+	top: 40%;
 }
