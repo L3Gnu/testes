@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top:0;
+    left: 0;
+    border: 1px solid #000000;
+}
+#containerSlider{
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 600px;
+    height: 300px;
+}
+.arrow{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 40px; 
+    color: #000000;
+    cursor: pointer;
+    z-index: 100;
+}
+#slider{
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+#right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+.images{
+    width: 600px;
+    height: 300px;
+    float: left;
+    display: block;
+}
