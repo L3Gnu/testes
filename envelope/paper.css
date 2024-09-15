@@ -1,0 +1,120 @@
+  
+  h1 {
+    color: #666;
+    position: relative;
+    z-index: 1;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  h2 {
+      font-size: 1em;
+      color: #ad2641;
+      font-weight: 500;
+      margin-bottom: 0.4em;
+      margin-top: 2em;
+      text-transform: uppercase;
+  }
+  
+  .names {
+      margin: 0 2rem 3rem 2rem;
+      img {
+          width: 100%;
+          height: auto;
+      }
+  }
+  
+  .wedding-date {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      color: #747577;
+      text-transform: uppercase;
+      font-family: serif;
+  
+      > div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0.8rem 2.5rem;
+          letter-spacing: 0.2rem;
+          font-size: 1.2rem;
+  
+          border-top: 1px solid #747577;
+          border-bottom: 1px solid #747577;
+      }
+  
+      .day {
+          position: relative;
+          min-width: 4em;
+          border-top: 0;
+          border-bottom: 0;
+          padding: 0;
+          color: #5b5c5e;
+  
+          > div {
+              font-size: 3.5rem;
+              position: absolute;
+          }
+      }
+  }
+  
+  .directions {
+      color: #8c8d90;
+      text-align: center;
+      margin-top: 3rem;
+  }
+  
+  .seal {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #b2a34f;
+    border-radius: 100%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .branch-left {
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    background: url(images/branch-left.svg) no-repeat;
+    background-size: 50px 200px;
+  }
+  
+  .branch-right {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    background: url(images/branch-right.svg) no-repeat;
+    background-position: 50px -150px;
+    background-size: 200px 600px;
+  }
+  
+  .paper {
+    width: 40em; /* Changed from 25em */
+    height: 30em; /* Changed from 15em */
+    position: absolute;
+    display: block;
+    top: 2em;
+    left: 2.5em;
+    background: #fff;
+    -webkit-transition: 1.5s ease-in-out;
+    -moz-transition: 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    z-index: 1;
+    text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
+      box-shadow: 0 0 1em rgba(68, 68, 136, 0.15);
+  }  

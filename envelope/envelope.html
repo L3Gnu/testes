@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="paper.css">
+	<link rel="stylesheet" href="index.css">
+    <title>Convite</title>
+</head>
+<body>
+    <div class="folder open">
+        <div class="part top">
+            <div class="triangle"></div>
+            <div class="triangle-back"></div>
+            <div class="seal">
+                <img src="images/selo.png" alt="Selo" />
+            </div>
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" />
+                <span>Unidos pelo amor</span>
+            </div>
+            <div class="part top-reverse">
+                <div class="guests">
+                </div>
+            </div>
+        </div>
+        <div class="part middle">
+            <div class="paper">
+				<div class="names">
+					<img src="images/nomes.png" alt="Nomes dos noivos" />
+				</div>
+				<div class="wedding-date">
+					<div>
+						<div>Maio</div>
+					</div>
+					<div class="day">
+						<div>24</div>
+					</div>
+					<div>
+						<div>2025</div>
+					</div>
+				</div>
+				<div class="directions">
+					<h2>Cerimónia</h2>
+					<div>Igreja Paroquial da Abóboda, pelas 12h00</div>
+					<h2>Copo D'água</h2>
+					<div>Quinta da Barreta, em Alcabideche</div>
+				</div>
+				<div class="branch-left"></div>
+				<div class="branch-right"></div>
+			</div>
+        </div>
+        <div class="part bottom">
+            <div class="confirmation">
+                <div>Agradecemos confirmação até 01.04.2025</div>
+                <div class="phones">
+                    <div>Cátia 938 075 590</div>
+                    <div>Miguel 916 705 705</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const folder = document.querySelector('.folder');
+        let isOpen = true;
+
+        // get value from query param "guest"
+        const urlParams = new URLSearchParams(window.location.search);
+        const guests = urlParams.get('guests');
+
+        console.log(guests)
+
+        const guestElem = document.querySelector('.guests').textContent = guests;
+
+        document.body.addEventListener('click', () => {
+            if (!isOpen) {
+                folder.classList.remove('closing');
+                folder.classList.add('open');
+                isOpen = true;
+            } else {
+                folder.classList.add('closing');
+                folder.classList.remove('open');
+                isOpen = false;
+                setTimeout(() => {
+                    folder.classList.remove('closing');
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+</html>
